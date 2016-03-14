@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_below="@+id/appBar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<RelativeLayout
+    android:background="@android:color/black"
+    android:layout_width="match_parent"
+    android:paddingRight="5dp"
+    android:paddingLeft="5dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/horizontalScrollView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:id="@+id/buttonPanel"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        </LinearLayout>
+    </HorizontalScrollView>
+    <android.support.v4.view.ViewPager
+        android:layout_below="@+id/horizontalScrollView"
+        android:id="@+id/view_pager"
+        android:layout_marginTop="1dp"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="#d8d8d8" />
+
+    <LinearLayout
+        android:id="@+id/section3"
+        android:layout_marginTop="1dp"
+        android:layout_below="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:padding="10dp"
+        android:background="#ffffff"
+        android:gravity="center_horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:text="TextView1"
+            android:textSize="22sp"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_gravity="top" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:text="TextView2"
+            android:textSize="22sp"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_gravity="center_vertical" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:text="TextView3"
+            android:textSize="22sp"
+            android:gravity="center_horizontal"
+            android:layout_gravity="bottom" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="1dp"
+        android:id="@+id/section4"
+        android:layout_below="@+id/section3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="76dp"
+            android:background="#ffffff"
+            android:textSize="22sp"
+            android:id="@+id/itemText"
+            android:gravity="center_vertical|center_horizontal" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="1dp"
+        android:layout_width="match_parent"
+        android:id="@+id/buttonPanel2"
+        android:layout_below="@+id/section4"
+        android:layout_height="wrap_content"
+        android:weightSum="3"
+        android:gravity="center_horizontal"
+        android:padding="25dp"
+        android:background="#ffffff">
+        <Button
+            android:layout_weight="1"
+            android:text="Red"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:id="@+id/button1"/>
+        <Button
+            android:text="Blue"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:id="@+id/button2"/>
+        <Button
+            android:text="Green"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:id="@+id/button3"/>
+    </LinearLayout>
+</RelativeLayout>
+</ScrollView>

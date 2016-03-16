@@ -2,12 +2,12 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 23
-    buildToolsVersion "23.0.2"
+    buildToolsVersion "22.0.1"
 
     defaultConfig {
-        applicationId "com.example.kiran.phoneRelease"
+        applicationId "com.example.kiran.tesdemo.tabletRelease"
         minSdkVersion 15
-        targetSdkVersion 23
+        targetSdkVersion 22
         versionCode 1
         versionName "1.0"
     }
@@ -27,7 +27,7 @@ android {
         }
         tablet {
             applicationId
-            "com.example.kiran.testdemo.tabletDebug"
+            "com.example.kiran.testdemo.tabletRelease"
             versionName "1.0"
             targetSdkVersion 22
             versionCode 1
